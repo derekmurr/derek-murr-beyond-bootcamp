@@ -190,4 +190,92 @@ body {
   width: 95%;
   max-width: 1024px;
 }
+
+.date-picker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: none;
+  padding: 0;
+  margin: 0 4rem 3rem 0;
+}
+
+.calendar-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-day {
+  border: 1px solid gainsboro;
+  padding: 1rem;
+  min-height: 250px;
+}
+
+.month-marker {
+  grid-column: 1 / -1;
+  background: gainsboro;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-month {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.calendar-weekday {
+  text-align: center;
+}
+
+.day1 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+}
+
+.day2 {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+
+.day3 {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+}
+
+.day4 {
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+}
+
+.day5 {
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+}
+
+.day6 {
+  -ms-grid-column: 6;
+      grid-column-start: 6;
+}
+
+.day0 {
+  -ms-grid-column: 7;
+      grid-column-start: 7;
+}
 /*# sourceMappingURL=styles.css.map */

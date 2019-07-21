@@ -3,3 +3,71 @@
   width: 95%;
   max-width: 1024px;
 }
+
+.date-picker {
+  display: flex;
+  justify-content: flex-start;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 0;
+  margin: 0 4rem 3rem 0;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-day {
+  border: 1px solid gainsboro;
+  padding: 1rem;
+  min-height: 250px;
+}
+
+.month-marker {
+  grid-column: 1 / -1;
+  background: gainsboro;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-month {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.calendar-weekday {
+  text-align: center;
+}
+
+.day1 {
+  grid-column-start: 1;
+}
+
+.day2 {
+  grid-column-start: 2;
+}
+
+.day3 {
+  grid-column-start: 3;
+}
+
+.day4 {
+  grid-column-start: 4;
+}
+
+.day5 {
+  grid-column-start: 5;
+}
+
+.day6 {
+  grid-column-start: 6;
+}
+
+.day0 {
+  grid-column-start: 7;
+}
