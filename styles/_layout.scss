@@ -1,3 +1,16 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
 .wrapper {
   margin: 0 auto;
   width: 95%;
@@ -25,12 +38,14 @@ fieldset {
 .calendar-day {
   border: 1px solid gainsboro;
   padding: 1rem;
-  min-height: 250px;
+  min-height: 200px;
 }
 
 .month-marker {
   grid-column: 1 / -1;
   background: gainsboro;
+  position: sticky;
+  top: 0;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
 }
@@ -70,4 +85,10 @@ fieldset {
 
 .day0 {
   grid-column-start: 7;
+}
+
+footer {
+  margin-top: auto;
+  flex-shrink: 0;
+  padding-top: 2rem;
 }

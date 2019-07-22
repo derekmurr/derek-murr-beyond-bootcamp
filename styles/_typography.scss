@@ -1,5 +1,78 @@
 body {
   font-size: 125%;
-  letter-spacing: -0.05rem;
+  letter-spacing: 0.013rem;
   line-height: 1.5;
+}
+
+.calendar-month {
+  margin: .5rem 0 0;
+  font-size: 1.1rem;
+}
+
+.calendar-weekday {
+  margin: .25rem 0 0;
+  font-size: 1rem;
+}
+
+.card-date {
+  color: grey;
+  font-size: 0.8rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin: .5rem 0 0;
+}
+
+.card-Easy {
+  color: $green;
+}
+
+.card-Recovery {
+  color: $aqua;
+}
+
+.card-Tempo {
+  color: $coral;
+}
+
+.card-Intervals {
+  color: $coral;
+}
+
+.card-Hills {
+  color: $coral;
+}
+
+.card-Rest {
+  color: $blue;
+}
+
+.card-GMP {
+  color: $coral;
+}
+
+.card-Long {
+  color: $salmon;
+}
+
+.card-Race {
+  color: rebeccapurple;
+}
+
+.card-distance {
+  font-size: 1.1rem;
+  margin: .25rem 0 0;
+}
+
+.card-notes {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+footer p {
+  color: grey;
+  font-size: 0.85rem;
+  margin: 0;
 }

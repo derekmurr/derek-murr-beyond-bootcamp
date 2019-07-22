@@ -179,10 +179,104 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
+/* Color Theme Swatches in RGBA */
 body {
   font-size: 125%;
-  letter-spacing: -0.05rem;
+  letter-spacing: 0.013rem;
   line-height: 1.5;
+}
+
+.calendar-month {
+  margin: .5rem 0 0;
+  font-size: 1.1rem;
+}
+
+.calendar-weekday {
+  margin: .25rem 0 0;
+  font-size: 1rem;
+}
+
+.card-date {
+  color: grey;
+  font-size: 0.8rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin: .5rem 0 0;
+}
+
+.card-Easy {
+  color: #035e72;
+}
+
+.card-Recovery {
+  color: #36a59a;
+}
+
+.card-Tempo {
+  color: #f5a187;
+}
+
+.card-Intervals {
+  color: #f5a187;
+}
+
+.card-Hills {
+  color: #f5a187;
+}
+
+.card-Rest {
+  color: #023059;
+}
+
+.card-GMP {
+  color: #f5a187;
+}
+
+.card-Long {
+  color: #f56469;
+}
+
+.card-Race {
+  color: rebeccapurple;
+}
+
+.card-distance {
+  font-size: 1.1rem;
+  margin: .25rem 0 0;
+}
+
+.card-notes {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+footer p {
+  color: grey;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .wrapper {
@@ -223,12 +317,15 @@ fieldset {
 .calendar-day {
   border: 1px solid gainsboro;
   padding: 1rem;
-  min-height: 250px;
+  min-height: 200px;
 }
 
 .month-marker {
   grid-column: 1 / -1;
   background: gainsboro;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[7];
@@ -277,5 +374,12 @@ fieldset {
 .day0 {
   -ms-grid-column: 7;
       grid-column-start: 7;
+}
+
+footer {
+  margin-top: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding-top: 2rem;
 }
 /*# sourceMappingURL=styles.css.map */
